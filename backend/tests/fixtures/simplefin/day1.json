@@ -1,0 +1,33 @@
+{
+  "errlist": [],
+  "accounts": [
+    {
+      "org": {"domain": "chase.com", "name": "Chase", "sfin-url": "https://bridge.simplefin.org/simplefin"},
+      "id": "ACT-CHK-1",
+      "name": "TOTAL CHECKING",
+      "currency": "USD",
+      "balance": "2450.12",
+      "available-balance": "2400.12",
+      "balance-date": 1788800000,
+      "transactions": [
+        {"id": "TXN-1", "posted": 1788652800, "amount": "-42.10", "description": "SQ *BLUE BOTTLE 0412 SAN FRANCISCO CA", "payee": "Blue Bottle", "memo": ""},
+        {"id": "TXN-2", "posted": 1788652800, "amount": "-1200.00", "description": "ONLINE PAYMENT TO CHASE CARD ENDING 4421", "payee": "", "memo": ""},
+        {"id": "PEND-9", "posted": 0, "pending": true, "transacted_at": 1788739200, "amount": "-55.00", "description": "TST* THE DINER SF", "payee": "", "memo": ""},
+        {"id": "TXN-1", "posted": 1788652800, "amount": "-42.10", "description": "SQ *BLUE BOTTLE 0412 SAN FRANCISCO CA", "payee": "Blue Bottle", "memo": ""},
+        {"id": "PEND-HOLD", "posted": 0, "pending": true, "transacted_at": 1788739200, "amount": "-1.00", "description": "CHEVRON 0091 PRE-AUTH", "payee": "", "memo": ""}
+      ]
+    },
+    {
+      "org": {"domain": "chase.com", "name": "Chase", "sfin-url": "https://bridge.simplefin.org/simplefin"},
+      "id": "ACT-CARD-1",
+      "name": "CHASE SAPPHIRE CARD",
+      "currency": "USD",
+      "balance": "-380.55",
+      "balance-date": 1788800000,
+      "transactions": [
+        {"id": "C-1", "posted": 1788739200, "amount": "1200.00", "description": "Payment Thank You-Mobile", "payee": "", "memo": ""},
+        {"id": "C-2", "posted": 1788652800, "amount": "-19.99", "description": "ADOBE *CREATIVE CLOUD 408-536-6000 CA", "payee": "", "memo": ""}
+      ]
+    }
+  ]
+}

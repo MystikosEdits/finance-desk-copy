@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Finance Desk: Collectr sync",
+  "version": "1.0.0",
+  "description": "Once a day (and on click) reads your own Collectr portfolio in your signed-in browser and hands it to Finance Desk.",
+  "permissions": ["alarms", "scripting", "storage", "tabs"],
+  "host_permissions": ["https://app.getcollectr.com/*", "http://localhost:8020/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Sync Collectr to Finance Desk now", "default_popup": "popup.html" },
+  "options_ui": { "page": "popup.html", "open_in_tab": false }
+}

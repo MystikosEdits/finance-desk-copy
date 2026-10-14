@@ -1,0 +1,31 @@
+{
+  "year": 2025,
+  "version": "2025.1",
+  "verified": false,
+  "source_note": "Filled from IRS Rev. Proc. 2024-40 as amended by the 2025 OBBBA (standard deduction) and IRS notices. Confirm every number with the accountant before relying on it; the UI labels all output as an estimate.",
+  "standard_deduction_cents": {"single": 1575000, "mfj": 3150000, "mfs": 1575000, "hoh": 2362500},
+  "brackets": {
+    "single": [[1192500, 10], [4847500, 12], [10335000, 22], [19730000, 24], [25052500, 32], [62635000, 35], [null, 37]],
+    "mfj":    [[2385000, 10], [9695000, 12], [20670000, 22], [39460000, 24], [50105000, 32], [75160000, 35], [null, 37]],
+    "mfs":    [[1192500, 10], [4847500, 12], [10335000, 22], [19730000, 24], [25052500, 32], [37580000, 35], [null, 37]],
+    "hoh":    [[1700000, 10], [6485000, 12], [10335000, 22], [19730000, 24], [25050000, 32], [62635000, 35], [null, 37]]
+  },
+  "se": {"net_earnings_factor": 0.9235, "social_security_rate": 0.124, "medicare_rate": 0.029,
+         "social_security_wage_base_cents": 17610000,
+         "additional_medicare_rate": 0.009,
+         "additional_medicare_threshold_cents": {"single": 20000000, "mfj": 25000000, "mfs": 12500000, "hoh": 20000000}},
+  "qbi": {"rate": 0.20, "threshold_cents": {"single": 19730000, "mfj": 39460000, "mfs": 19730000, "hoh": 19730000},
+          "note": "20% of qualified business income, capped at 20% of taxable income before QBI. Phase-outs above the threshold are NOT modelled."},
+  "meals_deductible_pct": 50,
+  "de_minimis_safe_harbor_cents": 250000,
+  "home_office": {"simplified_rate_cents_per_sqft": 500, "simplified_max_sqft": 300},
+  "standard_mileage_cents_per_mile": 70.0,
+  "form_1099_nec_threshold_cents": 60000,
+  "quarters": [
+    {"q": 1, "due": "2025-04-15", "covers_through": "2025-03-31"},
+    {"q": 2, "due": "2025-06-16", "covers_through": "2025-05-31"},
+    {"q": 3, "due": "2025-09-15", "covers_through": "2025-08-31"},
+    {"q": 4, "due": "2026-01-15", "covers_through": "2025-12-31"}
+  ],
+  "safe_harbor": {"prior_year_pct": 100, "prior_year_pct_high_agi": 110, "high_agi_threshold_cents": {"single": 15000000, "mfj": 15000000, "mfs": 7500000, "hoh": 15000000}, "current_year_pct": 90}
+}

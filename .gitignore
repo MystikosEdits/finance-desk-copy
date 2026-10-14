@@ -1,0 +1,25 @@
+# Everything the app writes lives under data/ and none of it is source:
+# the database, password hashes, the session secret, the backup key, the
+# DPAPI-wrapped SimpleFIN credentials, receipts, backups, logs.
+data/
+
+# Per-machine, rebuilt by deploy.ps1.
+.venv/
+frontend/node_modules/
+
+# Build output. Deliberately NOT committed: a committed dist/ with a plausible
+# mtime is exactly the stale-artifact trap - it looks fine and is not. The rig
+# builds it from source at deploy time, and app.py refuses to start without it.
+frontend/dist/
+
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+desktop.ini
+# The file bash creates when someone writes PowerShell's >$null in it.
+$null
+
+# A client_secret or token from anywhere, not just the paths we know about.
+*client_secret*.json
+token*.json

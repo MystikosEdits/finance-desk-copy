@@ -1,0 +1,12 @@
+# Pinned, not floating. The rig is the one machine this runs on; a surprise
+# major bump in fastapi or pydantic should happen when someone chose it, not
+# when someone rebuilt a box. Versions match what Reaction Desk runs on the
+# same interpreter today, so nothing here is untested on that hardware.
+
+fastapi==0.128.8          # the web framework
+uvicorn==0.40.0           # the server; ONE worker, always (all safety is in-process locks)
+pydantic==2.13.4          # request models; note `int | None = None`, never `int = None`
+python-multipart==0.0.21  # multipart uploads (receipts, CSV files). Fails at REQUEST time if missing, not at startup.
+httpx==0.28.1             # SimpleFIN, price providers. Also what starlette's TestClient imports.
+cryptography==50.0.1      # Fernet for the encrypted backup copy. DPAPI (secrets) needs nothing.
+pytest==8.4.1             # tests only; harmless in the runtime venv and it keeps one requirements file

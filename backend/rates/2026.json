@@ -1,0 +1,31 @@
+{
+  "year": 2026,
+  "version": "2026.1",
+  "verified": false,
+  "source_note": "Filled from IRS Rev. Proc. 2025-32 (Oct 2025 inflation adjustments) and the OBBBA changes to the 1099-NEC threshold. The 2026 standard mileage rate is a placeholder until the IRS notice is confirmed. Confirm every number with the accountant; the UI labels all output as an estimate.",
+  "standard_deduction_cents": {"single": 1610000, "mfj": 3220000, "mfs": 1610000, "hoh": 2415000},
+  "brackets": {
+    "single": [[1240000, 10], [5040000, 12], [10570000, 22], [20177500, 24], [25622500, 32], [64060000, 35], [null, 37]],
+    "mfj":    [[2480000, 10], [10080000, 12], [21140000, 22], [40355000, 24], [51245000, 32], [76870000, 35], [null, 37]],
+    "mfs":    [[1240000, 10], [5040000, 12], [10570000, 22], [20177500, 24], [25622500, 32], [38435000, 35], [null, 37]],
+    "hoh":    [[1770000, 10], [6745000, 12], [10570000, 22], [20175000, 24], [25620000, 32], [64060000, 35], [null, 37]]
+  },
+  "se": {"net_earnings_factor": 0.9235, "social_security_rate": 0.124, "medicare_rate": 0.029,
+         "social_security_wage_base_cents": 18450000,
+         "additional_medicare_rate": 0.009,
+         "additional_medicare_threshold_cents": {"single": 20000000, "mfj": 25000000, "mfs": 12500000, "hoh": 20000000}},
+  "qbi": {"rate": 0.20, "threshold_cents": {"single": 20177500, "mfj": 40355000, "mfs": 20177500, "hoh": 20177500},
+          "note": "20% of qualified business income, capped at 20% of taxable income before QBI. Phase-outs above the threshold are NOT modelled."},
+  "meals_deductible_pct": 50,
+  "de_minimis_safe_harbor_cents": 250000,
+  "home_office": {"simplified_rate_cents_per_sqft": 500, "simplified_max_sqft": 300},
+  "standard_mileage_cents_per_mile": 72.5,
+  "form_1099_nec_threshold_cents": 200000,
+  "quarters": [
+    {"q": 1, "due": "2026-04-15", "covers_through": "2026-03-31"},
+    {"q": 2, "due": "2026-06-15", "covers_through": "2026-05-31"},
+    {"q": 3, "due": "2026-09-15", "covers_through": "2026-08-31"},
+    {"q": 4, "due": "2027-01-15", "covers_through": "2026-12-31"}
+  ],
+  "safe_harbor": {"prior_year_pct": 100, "prior_year_pct_high_agi": 110, "high_agi_threshold_cents": {"single": 15000000, "mfj": 15000000, "mfs": 7500000, "hoh": 15000000}, "current_year_pct": 90}
+}

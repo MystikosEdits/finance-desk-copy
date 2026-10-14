@@ -1,0 +1,16 @@
+{
+  "host": "0.0.0.0",
+  "port": 8020,
+  "auth_enabled": true,
+  "sync_times": ["06:30", "14:30", "22:30"],
+  "prices_time": "04:00",
+  "backup_time": "03:30",
+  "onedrive_backup_dir": "",
+  "receipt_required_over_cents": 7500,
+  "_notes": {
+    "host": "0.0.0.0 = reachable over the network. Reach it over Tailscale, NOT a port forward, and never Funnel. The firewall rule deploy.ps1 makes is scoped to the tailnet (100.64.0.0/10). While no user exists the app ignores this and binds 127.0.0.1 so /setup can only be reached through an SSH tunnel.",
+    "auth_enabled": "false is allowed only with host 127.0.0.1; the server refuses to start otherwise.",
+    "sync_times": "local clock. SimpleFIN Bridge refreshes about once a day; three pulls is plenty and four is at the edge of what they call reasonable.",
+    "receipt_required_over_cents": "business splits at or above this without an attachment show in Business > Missing receipts. $75 is the IRS documentary-evidence threshold."
+  }
+}

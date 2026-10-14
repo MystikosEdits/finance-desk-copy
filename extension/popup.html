@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 13px system-ui, sans-serif; background: #0b0f17; color: #e5e9f0; margin: 0; padding: 12px; width: 300px; }
+  h1 { font-size: 13px; margin: 0 0 8px; }
+  label { display: block; font-size: 11px; color: #8b96a8; margin-top: 8px; text-transform: uppercase; letter-spacing: .04em; }
+  input { width: 100%; box-sizing: border-box; background: #111827; color: #e5e9f0; border: 1px solid #2a3850; border-radius: 6px; padding: 6px 8px; font: inherit; }
+  button { margin-top: 10px; background: #059669; color: #fff; border: 0; border-radius: 6px; padding: 7px 10px; font: inherit; cursor: pointer; }
+  button.secondary { background: #151d2c; border: 1px solid #2a3850; }
+  .last { margin-top: 10px; font-size: 12px; color: #8b96a8; white-space: pre-wrap; }
+  .ok { color: #34d399; } .bad { color: #f87171; }
+</style>
+</head>
+<body>
+  <h1>Finance Desk · Collectr sync</h1>
+  <div class="last" id="last">loading…</div>
+  <button id="sync">Sync now</button>
+  <button id="save" class="secondary">Save settings</button>
+  <label>Finance Desk address</label>
+  <input id="desk">
+  <label>Collectr handle</label>
+  <input id="handle">
+  <label>Every N hours (while Chrome is open)</label>
+  <input id="hours" type="number" min="1" max="168">
+  <script src="popup.js"></script>
+</body>
+</html>
